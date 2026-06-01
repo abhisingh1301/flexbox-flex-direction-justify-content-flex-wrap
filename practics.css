@@ -1,0 +1,137 @@
+.container {
+  width: min(400px,100%);
+  height: 400px;
+  border: 2px solid rgba(18, 137, 99, 0.868);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  perspective: 300px;
+}
+
+.container div {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.337);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.container div:hover {
+  transform: translateY(-10px);
+}
+
+.container div:active {
+  transform: rotateX(-180deg);
+}
+
+h1 {
+  text-align: center;
+}
+
+.navbar {
+  width: min(900px,100%); /* make responsive design*/
+  height: 50px;
+  border: 2px solid rgba(18,137,99,0.8);
+  background-color: pink;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar div {
+  width: 80px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navbar div a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+.navbar div a:hover{
+  transform: translateY(-5px);
+}
+
+.container2 {
+    width: 100%;
+    height: 150px;
+    background-color: azure;
+    border: 5px dashed black;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+h1 {
+    text-align: center;
+}
+
+.dost-1 {
+    flex-basis: 90px;
+    height: 100px;
+    background-color: rgba(237, 38, 78, 0.953);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.dost-2 {
+    flex-basis: 90px;
+    height: 100px;
+    background-color: rgba(92, 230, 94, 0.953);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 2;
+}
+
+.dost-3 {
+    flex-basis: 90px;
+    height: 100px;
+    background-color: rgba(75, 131, 234, 0.953);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
